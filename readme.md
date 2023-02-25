@@ -1,6 +1,6 @@
 # My personal blog
 
-You can visit it on https://kajalelohai.github.io
+You can visit it on https://kajal.dev
 
 ## Updating the theme
 

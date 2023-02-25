@@ -1,6 +1,6 @@
-baseURL = "https://kajalelohai.github.io/"
+baseURL = "https://kajal.dev/"
 languageCode = "en-us"
-title = "Elohai Kajal"
+title = "Kajal Negi"
 theme = "personal-web"
 googleAnalytics = ""
 enableEmoji=true
