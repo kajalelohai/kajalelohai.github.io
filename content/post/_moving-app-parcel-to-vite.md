@@ -12,12 +12,15 @@ draft = false
 Below are the list of changes needed to switch from Parcel to Vite:
 
 - changes in package.json
-	- empty out the script object
-	- Remove all things related to parcel such as for me its:
-		- "@parcel/transformer-sass"
-		- "parcel": "^2.8.2",
+
+	* empty out the script object
+	* Remove all things related to parcel such as for me its:
+
+		* "@parcel/transformer-sass"
+		* "parcel": "^2.8.2",
+
 - Run `npm i` to remove all the packages.
-- Remove .parcel-cache
+- Remove *.parcel-cache*
 - I had one project setup with vite in my machine so I copied the packages needed and vite scripts object to package.json as below:
 	```json
 	"scripts": {
@@ -31,9 +34,11 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	"vite": "^4.1.0"
 	}
 ```
-NOTE: I need to make above changes to the existing package.json.
 
-- Now Run `npm i` to install the new dependencies.
+*NOTE:* I need to make above changes to the existing package.json
+
+- Now run `npm i` to install the new dependencies:
+
 ```json
 {
 	"compileOnSave": true,
