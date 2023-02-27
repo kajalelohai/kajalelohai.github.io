@@ -13,14 +13,13 @@ Below are the list of changes needed to switch from Parcel to Vite:
 
 - changes in package.json
 
-	* empty out the script object
-	* Remove all things related to parcel such as for me its:
-
+  - empty out the script object
+  - Remove all things related to parcel such as for me its as mentioned below:
 		* "@parcel/transformer-sass"
 		* "parcel": "^2.8.2",
 
-- Run `npm i` to remove all the packages.
-- Remove *.parcel-cache*
+- Run **npm i** to remove all the packages.
+- Remove **.parcel-cache**
 - I had one project setup with vite in my machine so I copied the packages needed and vite scripts object to package.json as below:
 	```json
 	"scripts": {
@@ -32,14 +31,15 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	"@vitejs/plugin-react": "^3.1.0",
 	"typescript": "^4.9.3",
 	"vite": "^4.1.0"
-	}```
+	}
+  ```
 
-*NOTE:* I need to make above changes to the existing package.json
+**NOTE:** I need to make above changes to the existing package.json
 
-- Now run `npm i` to install the new dependencies
-```json
-{
-	"compileOnSave": true,
+- Now run **npm i** to install the new dependencies
+  ```json
+  {
+  "compileOnSave": true,
 	"compilerOptions": {
 	"jsx": "preserve",
 	"experimentalDecorators": true,
@@ -56,11 +56,12 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules"]
-}```
+  }
+  ```
 
-- Replaced above `tsconfig.json' with below code:
-```json
-{
+- Replace above **tsconfig.json** with below code:
+  ```json
+  {
 	"compilerOptions": {
 	"target": "ESNext",
 	"useDefineForClassFields": true,
@@ -85,11 +86,12 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	"include": ["src/**/*"],
 	"exclude": ["node_modules"],
 	"references": [{ "path": "./tsconfig.node.json" }]
-}```
+  }
+  ```
 
-- Add `tsconfig.node.json` with below code in it:
-```json
-{
+- Add **tsconfig.node.json** with below code in it:
+  ```json
+  {
 	"compilerOptions": {
 	"composite": true,
 	"module": "ESNext",
@@ -97,7 +99,8 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	"allowSyntheticDefaultImports": true
 	},
 	"include": ["vite.config.ts"]
-}```
+  }
+  ```
 
 - Install `vite-tsconfig-paths` by `npm i -D vite-tsconfig-paths`
 - The index.html for me was inside src so I also moved it out to root of my ui project.
@@ -112,6 +115,7 @@ export default defineConfig({
 
 plugins: [react()],
 
-})```
+})
+```
 
 - You are all set now to run the project using `npm run dev` also you can test it with `npm run build`.
