@@ -32,13 +32,11 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	"@vitejs/plugin-react": "^3.1.0",
 	"typescript": "^4.9.3",
 	"vite": "^4.1.0"
-	}
-```
+	}```
 
 *NOTE:* I need to make above changes to the existing package.json
 
-- Now run `npm i` to install the new dependencies:
-
+- Now run `npm i` to install the new dependencies
 ```json
 {
 	"compileOnSave": true,
@@ -58,9 +56,9 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules"]
-}
-```
-- Replaced above `tsconfig.json` with below code :
+}```
+
+- Replaced above `tsconfig.json' with below code:
 ```json
 {
 	"compilerOptions": {
@@ -87,9 +85,9 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	"include": ["src/**/*"],
 	"exclude": ["node_modules"],
 	"references": [{ "path": "./tsconfig.node.json" }]
-}
-```
-- Add tsconfig.node.json with below code in it:
+}```
+
+- Add `tsconfig.node.json` with below code in it:
 ```json
 {
 	"compilerOptions": {
@@ -99,13 +97,13 @@ Below are the list of changes needed to switch from Parcel to Vite:
 	"allowSyntheticDefaultImports": true
 	},
 	"include": ["vite.config.ts"]
-}
-```
+}```
+
 - Install `vite-tsconfig-paths` by `npm i -D vite-tsconfig-paths`
 - The index.html for me was inside src so I also moved it out to root of my ui project.
 - Also, inside index.html changed the src path to `src='src/index.tsx'`
 - Define a `vite.config.ts` file at root of the project with below lines in it:
-```ts
+```typescript
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -114,6 +112,6 @@ export default defineConfig({
 
 plugins: [react()],
 
-})
-```
+})```
+
 - You are all set now to run the project using `npm run dev` also you can test it with `npm run build`.
