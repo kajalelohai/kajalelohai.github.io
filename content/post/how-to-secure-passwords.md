@@ -9,6 +9,6 @@ tags = [
 draft = false
 +++
 
-#### A) Description
+#### Description
 
-I am on my way to post my older blogs yet.... 
+I am on my way to shift my older blogs from my other places to here.... 
