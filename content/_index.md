@@ -3,7 +3,6 @@ title: HOME
 description: Welcome to this sample project
 images: ["/images/sample.jpg"]
 ---
-
 ### Welcome!
 <h2>Hi! I am Kajal Negi Khabra</h2>
 <hr>
