@@ -5,7 +5,7 @@ images: [""]
 
 ---
 
-My name is Kajal Negi Khabra. I am a professional Software Engineer. I am originally from Uttarakhand, India but have been living in Berlin,Germany since December, 2022🌎.
+My name is Kajal Negi Khabra. I am a professional Software Engineer, originally from Uttarakhand, India but have been living in Berlin,Germany since December, 2022 🌎.
 
 I have completed many projects successfully with quality work in ReactJS, NodeJS, Typescript, Javascript.
 It has always been an amazing feeling after successfully completing the project.
