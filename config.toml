@@ -9,7 +9,7 @@ pygmentsUseClasses=true
 pygmentsCodeFences=true
 
 [params.intro]
-  main = "Hi, I'm Kajal"
+  main = "Hi, I'm Kajal :wave:"
   sub = "A Developer at Heart"
 
 [params.main]
