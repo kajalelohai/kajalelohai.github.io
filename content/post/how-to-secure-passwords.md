@@ -10,6 +10,7 @@ draft = false
 +++
 
 #### Description
+
 - First of all a password should be strong(long and unique).
     - You should have a unique password for each and every account.
     - Hackers are benefitted in a way that if one of your account is hacked meaning all are hacked. 
@@ -31,3 +32,4 @@ draft = false
     - This adds a one more layer of security on the verification process.
     - This is also done sometimes by fingerprint or faceId on phones.
      
+**NOTE:** All the above steps are mandatory before you decide to save your password.
