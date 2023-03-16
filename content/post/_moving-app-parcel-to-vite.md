@@ -1,7 +1,7 @@
 +++
 author = "Kajal Negi"
 title = "Move your app from Parcel to Vite"
-date = "2020-02-27"
+date = "2023-02-27"
 description = ""
 tags = [
     "security",
