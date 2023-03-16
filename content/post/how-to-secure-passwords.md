@@ -9,9 +9,6 @@ tags = [
 draft = false
 +++
 
-#### Description
-<br />
-
 - First of all a password should be strong(long and unique).
     - You should have a unique password for each and every account.
     - Hackers are benefitted in a way that if one of your account is hacked meaning all are hacked. 
