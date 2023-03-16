@@ -10,7 +10,7 @@ draft = false
 +++
 
 #### Description
-<br>
+<br />
 
 - First of all a password should be strong(long and unique).
     - You should have a unique password for each and every account.
